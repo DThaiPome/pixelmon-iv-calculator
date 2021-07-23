@@ -1,0 +1,1 @@
+import Stats from './pokemon-info/Stats';

@@ -7,10 +7,13 @@
         "noImplicitThis": true,
         "alwaysStrict":true,
         "noImplicitReturns": true,
-        "sourceMap": false
+        "sourceMap": false,
+        "moduleResolution": "node"
     },
 
     "files": [
+        "utils/http.ts",
+        "pokemon-info/Stats.ts",
         "main.ts"
     ]
 }
