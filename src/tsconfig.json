@@ -13,7 +13,10 @@
 
     "files": [
         "utils/http.ts",
+        "pokemon-info/Stat.ts",
         "pokemon-info/Stats.ts",
+        "pokemon-info/Nature.ts",
+        "pokemon-info/Pokemon.ts",
         "main.ts"
     ]
 }

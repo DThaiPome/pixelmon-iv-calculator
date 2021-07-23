@@ -3,7 +3,7 @@ import { Stat } from './Stat';
 export type Nature = (s: Stat, n: number) => number;
 
 export const Natures {
-    
+    lonely: natureCallback(Stat.ATK, Stat.DEF)
 }
 
 function natureCallback(highStat: Stat, lowStat: Stat): Nature {
