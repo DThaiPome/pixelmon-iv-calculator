@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "none",
+        "target": "es6",
+        "outFile": "../www/iv-calculator.js",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "alwaysStrict":true,
+        "noImplicitReturns": true,
+        "sourceMap": false
+    },
+
+    "files": [
+        "main.ts"
+    ]
+}
