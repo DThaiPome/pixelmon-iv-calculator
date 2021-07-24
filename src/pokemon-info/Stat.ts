@@ -1,8 +1,11 @@
-export enum Stat {
-    HP = 0,
-    ATK,
-    DEF,
-    SPATK,
-    SPDEF,
-    SPE
+namespace IVCalculator {
+    export enum Stat {
+        NONE = -1,
+        HP,
+        ATK,
+        DEF,
+        SPATK,
+        SPDEF,
+        SPE
+    }
 }

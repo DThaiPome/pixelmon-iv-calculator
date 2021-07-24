@@ -1,1 +1,3 @@
-import Stats from './pokemon-info/Stats';
+function onPress() {
+    IVCalculator.onPress();
+}

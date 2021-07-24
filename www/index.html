@@ -2,11 +2,49 @@
 <head>
     <meta charset="utf-8">
     <title>Pixelmon IV Calculator</title>
-    <script src="./iv-calculator.js" />
+    <script src="iv-calculator.js"></script>
 </head>
 <body>
-    <div>
-        <h2>Current stats</h2>    
+    <div><button onclick="onPress()">GO</button></div>
+    <div id="pokemon-species">
+        <h2>Pokemon Species</h2>
+        <input type="text"></input>    
     </div>
+    <div id="current-stats">
+        <h2>Current stats</h2>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+    </div>
+    <div id="evs">
+        <h2>Effort values</h2>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+        <input type="number"></input>
+    </div>
+    <div id="level">
+        <h2>Level</h2>
+        <input type="number"></input>    
+    </div>
+    <div id="nature">
+        <h2>Nature</h2>
+        <input type="text"></input>    
+    </div>
+    <div id="ivs">
+        <h2>Possible IVs</h2>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="error"></div>
 </body>
 </html>

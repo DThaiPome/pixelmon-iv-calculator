@@ -1,22 +1,24 @@
 {
     "compilerOptions": {
-        "module": "none",
         "target": "es6",
         "outFile": "../www/iv-calculator.js",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "noImplicitThis": true,
         "alwaysStrict":true,
         "noImplicitReturns": true,
         "sourceMap": false,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "noEmit": false,
+        "noEmitOnError": false
     },
 
     "files": [
-        "utils/http.ts",
-        "pokemon-info/Stat.ts",
-        "pokemon-info/Stats.ts",
-        "pokemon-info/Nature.ts",
-        "pokemon-info/Pokemon.ts",
+        "./utils/http.ts",
+        "./pokemon-info/Stat.ts",
+        "./pokemon-info/Stats.ts",
+        "./pokemon-info/Nature.ts",
+        "./pokemon-info/Pokemon.ts",
+        "Application.ts",
         "main.ts"
     ]
 }
