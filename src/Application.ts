@@ -17,12 +17,12 @@ namespace IVCalculator {
         let div = document.querySelector('#ivs');
         let spans = div.querySelectorAll('span');
         for(let i = 0; i < 6; i++) {
-            spans[i].textContent = pairToString(values[i]);
+            spans[i].innerHTML = pairToString(values[i]);
         }
     }
     
     function pairToString(pair: [number, number]): string {
-        return `[${pair[0]} - ${pair[1]}]`;
+        return `<b>[${pair[0]} - ${pair[1]}]</b>`;
     }
 
     async function calculateValues(): Promise<Array<[number, number]>> {

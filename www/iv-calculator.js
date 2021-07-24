@@ -236,11 +236,11 @@ var IVCalculator;
         let div = document.querySelector('#ivs');
         let spans = div.querySelectorAll('span');
         for (let i = 0; i < 6; i++) {
-            spans[i].textContent = pairToString(values[i]);
+            spans[i].innerHTML = pairToString(values[i]);
         }
     }
     function pairToString(pair) {
-        return `[${pair[0]} - ${pair[1]}]`;
+        return `<b>[${pair[0]} - ${pair[1]}]</b>`;
     }
     function calculateValues() {
         return __awaiter(this, void 0, void 0, function* () {

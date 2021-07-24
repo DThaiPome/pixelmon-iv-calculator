@@ -5,27 +5,50 @@
     <script src="iv-calculator.js"></script>
 </head>
 <body>
-    <div><button onclick="onPress()">GO</button></div>
+    <h1>Pixelmon Generations IV Calculator</h1>
+    <div style="width: 50%">
+        <p>If Pixelmon Extras ever becomes unreliable, this calculator will accurately estimate the individual values of your pokemon. Due to floating-point rounding, only a range [min/max] of values can be produced. In general, the higher your pokemon's level, the more precise the results.</p>
+        <p>If you need to use this calculator, that probably means that you do not have access to the /evs command. <b>Make sure you keep track of the effort values of your pokemon!</b> These values are necessary for the calculations.</p>
+        <p>To use this calculator, fill out the fields with the correct information from your pokemon's summary in-game. Then click "Calculate IVs", and the results will render at the bottom of the page.</p>
+        <p>I made this tool in a few hours and it is not well tested. If you find a bug or other issue, or have feedback, let me know @ DThaiPome#0789!</p>
+    </div>
+    <br>
+    <div><button onclick="onPress()">Calculate IVs</button></div>
     <div id="pokemon-species">
         <h2>Pokemon Species</h2>
+        <p><i>Note: For pokemon with alternate forms that affect their base stats, the species should be entered as [pokemon]-[form].</i></p>
+        <p><i>Examples: "deoxys-normal", "giratina-origin", "rotom-wash"</i></p>
+        <p><i>For more information, check out <a href="https://pokeapi.co/">PokeAPI</a>, the service used to get data on pokemon base stats, or contact me and I can help :)</i></p>
         <input type="text"></input>    
     </div>
     <div id="current-stats">
         <h2>Current stats</h2>
+        HP:
         <input type="number"></input>
+        ATK:
         <input type="number"></input>
+        DEF:
         <input type="number"></input>
+        SPATK:
         <input type="number"></input>
+        SPDEF:
         <input type="number"></input>
+        SPE:
         <input type="number"></input>
     </div>
     <div id="evs">
         <h2>Effort values</h2>
+        HP:
         <input type="number"></input>
+        ATK:
         <input type="number"></input>
+        DEF:
         <input type="number"></input>
+        SPATK:
         <input type="number"></input>
+        SPDEF:
         <input type="number"></input>
+        SPE:
         <input type="number"></input>
     </div>
     <div id="level">
@@ -38,11 +61,17 @@
     </div>
     <div id="ivs">
         <h2>Possible IVs</h2>
+        HP:
         <span></span>
+        ATK:
         <span></span>
+        DEF:
         <span></span>
+        SPATK:
         <span></span>
+        SPDEF:
         <span></span>
+        SPE:
         <span></span>
     </div>
     <div id="error"></div>
